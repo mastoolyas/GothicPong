@@ -4,7 +4,7 @@
     "type": "MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.example.oneplayerpong",
+  "applicationId": "com.yaron.gothicpong",
   "variantName": "debug",
   "elements": [
     {

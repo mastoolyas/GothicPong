@@ -310,7 +310,7 @@ ADDED from [androidx.core:core:1.13.0] C:\Users\Yaron\.gradle\caches\8.8\transfo
 		ADDED from [androidx.core:core:1.13.0] C:\Users\Yaron\.gradle\caches\8.8\transforms\a0ca8c228bbbe955c0adf1640e030824\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.13.0] C:\Users\Yaron\.gradle\caches\8.8\transforms\a0ca8c228bbbe955c0adf1640e030824\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
-permission#com.example.oneplayerpong.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#com.yaron.gothicpong.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.0] C:\Users\Yaron\.gradle\caches\8.8\transforms\a0ca8c228bbbe955c0adf1640e030824\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.13.0] C:\Users\Yaron\.gradle\caches\8.8\transforms\a0ca8c228bbbe955c0adf1640e030824\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
@@ -320,7 +320,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.0] C:\Users\Yaron\.gradle\caches\8.8\transforms\a0ca8c228bbbe955c0adf1640e030824\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.0] C:\Users\Yaron\.gradle\caches\8.8\transforms\a0ca8c228bbbe955c0adf1640e030824\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
-uses-permission#com.example.oneplayerpong.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#com.yaron.gothicpong.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.0] C:\Users\Yaron\.gradle\caches\8.8\transforms\a0ca8c228bbbe955c0adf1640e030824\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.0] C:\Users\Yaron\.gradle\caches\8.8\transforms\a0ca8c228bbbe955c0adf1640e030824\transformed\core-1.13.0\AndroidManifest.xml:26:22-94

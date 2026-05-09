@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.oneplayerpong"
+    package="com.yaron.gothicpong"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -14,10 +14,10 @@
     </queries>
 
     <permission
-        android:name="com.example.oneplayerpong.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.yaron.gothicpong.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.oneplayerpong.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.yaron.gothicpong.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:allowBackup="true"
@@ -27,7 +27,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="OnePlayerPong"
         android:roundIcon="@mipmap/ic_launcher"
-        android:testOnly="true"
         android:theme="@style/Theme.OnePlayerPong" >
         <activity
             android:name="com.example.oneplayerpong.MainActivity"
@@ -45,7 +44,7 @@
 
         <provider
             android:name="com.google.android.gms.games.provider.PlayGamesInitProvider"
-            android:authorities="com.example.oneplayerpong.playgamesinitprovider"
+            android:authorities="com.yaron.gothicpong.playgamesinitprovider"
             android:exported="false"
             android:initOrder="99" />
 
@@ -73,7 +72,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.oneplayerpong.androidx-startup"
+            android:authorities="com.yaron.gothicpong.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

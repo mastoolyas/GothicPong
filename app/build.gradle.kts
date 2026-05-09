@@ -8,7 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.oneplayerpong"
+        applicationId = "com.yaron.gothicpong"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
