@@ -1,0 +1,41 @@
+# Built objects
+*.pyc
+*.obj
+*.o
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+
+# Gradle files
+.gradle/
+build/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+
+# Android Studio files
+captures/
+externalNativeBuild/
+.externalNativeBuild/
+
+# Local configuration file (contains SDK paths, etc)
+local.properties
+
+# Log files
+*.log
+
+# Android Profiler
+*.hprof
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Signing files
+*.jks
+*.keystore
+google-services.json

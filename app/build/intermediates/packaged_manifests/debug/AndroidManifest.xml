@@ -8,6 +8,11 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="34" />
 
+    <queries>
+        <package android:name="com.google.android.gms" />
+        <package android:name="com.android.vending" />
+    </queries>
+
     <permission
         android:name="com.example.oneplayerpong.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -19,18 +24,52 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
         android:label="OnePlayerPong"
+        android:roundIcon="@mipmap/ic_launcher"
         android:testOnly="true"
         android:theme="@style/Theme.OnePlayerPong" >
         <activity
             android:name="com.example.oneplayerpong.MainActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.oneplayerpong.GameActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="com.google.android.gms.games.provider.PlayGamesInitProvider"
+            android:authorities="com.example.oneplayerpong.playgamesinitprovider"
+            android:exported="false"
+            android:initOrder="99" />
+
+        <activity
+            android:name="com.google.android.gms.games.internal.v2.resolution.GamesResolutionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Games.Transparent" />
+        <activity
+            android:name="com.google.android.gms.games.internal.v2.appshortcuts.PlayGamesAppShortcutsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Games.Transparent" />
+
+        <meta-data
+            android:name="com.google.android.gms.games.version"
+            android:value="@string/play_games_sdk_version" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

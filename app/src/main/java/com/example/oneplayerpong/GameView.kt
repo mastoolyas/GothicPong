@@ -18,7 +18,7 @@ class GameView(context: Context) : SurfaceView(context), SurfaceHolder.Callback,
     @Volatile
     private var running = false
 
-    private val engine = GameEngine()
+    val engine = GameEngine()
     private var lastFrameTime = 0L
     private var notificationTimer = 0f
 
