@@ -13,7 +13,7 @@ Phase 2: Technical Configuration
 --------------------------------
 [v] Generate Signing Key: Build -> Generate Signed Bundle -> Create New Keystore.
     * IMPORTANT: Backup your .jks file and passwords!
-[ ] Get SHA-1 Fingerprint: Run './gradlew signingReport' in Android Studio terminal.
+[v] Get SHA-1 Fingerprint: Run './gradlew signingReport' in Android Studio terminal.
 [v] Google Play Console - Play Games Services:
     * Create a new Play Games project.
     * Link the Android app using the SHA-1 from the signingReport.
@@ -36,6 +36,6 @@ Phase 4: Testing (For Personal Accounts)
 
 Phase 5: Final Submission
 -------------------------
-[ ] Build Release Bundle: Run './gradlew bundleRelease'.
+[v] Build Release Bundle: Run './gradlew bundleRelease'.
 [ ] Upload AAB: Upload the .aab file from 'app/build/outputs/bundle/release/'.
 [ ] Rollout: Start rollout to Production.
