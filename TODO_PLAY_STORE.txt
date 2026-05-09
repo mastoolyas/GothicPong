@@ -1,0 +1,41 @@
+Gothic Pong - Play Store Publishing Checklist
+============================================
+
+Phase 1: Visual Assets
+----------------------
+[v] App Icon: 512x512px PNG (Transparent or solid background).
+[ ] Feature Graphic: 1024x500px PNG or JPG.
+[ ] Screenshots (Phone): At least 2 screenshots of the menu and gameplay.
+[-] Screenshots (Tablet): 7-inch and 10-inch screenshots (optional but recommended).
+[-] Promotional Video: YouTube link (optional).
+
+Phase 2: Technical Configuration
+--------------------------------
+[v] Generate Signing Key: Build -> Generate Signed Bundle -> Create New Keystore.
+    * IMPORTANT: Backup your .jks file and passwords!
+[ ] Get SHA-1 Fingerprint: Run './gradlew signingReport' in Android Studio terminal.
+[v] Google Play Console - Play Games Services:
+    * Create a new Play Games project.
+    * Link the Android app using the SHA-1 from the signingReport.
+    * Add the App ID to 'strings.xml' if required by the console.
+[v] Privacy Policy: Create a hosted URL (e.g., via GitHub Pages or a free generator).
+
+Phase 3: Google Play Console Setup
+----------------------------------
+[ ] Create App: Set name "Gothic Pong", Default language, and App type.
+[ ] Set up Store Listing: Description, category (Arcade/Casual), and contact tags.
+[ ] Content Rating: Complete the questionnaire.
+[ ] Target Audience: Set age groups (e.g., All ages or 13+).
+[ ] Data Safety: Complete the form regarding user data (Play Games uses name/ID).
+
+Phase 4: Testing (For Personal Accounts)
+----------------------------------------
+[ ] Closed Testing: Add 20 testers.
+[ ] Internal Testing: Quick deploy to specific emails for feedback.
+[ ] Testing Duration: Ensure the app remains in closed testing for 14 days (required for new personal accounts).
+
+Phase 5: Final Submission
+-------------------------
+[ ] Build Release Bundle: Run './gradlew bundleRelease'.
+[ ] Upload AAB: Upload the .aab file from 'app/build/outputs/bundle/release/'.
+[ ] Rollout: Start rollout to Production.
